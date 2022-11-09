@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="12" failures="10" errors="0" time="0.796">
+  <testsuite name="Tesla Battery App" errors="0" failures="0" skipped="0" timestamp="2022-10-29T22:08:47" time="0.364" tests="1">
+    <testcase classname="Tesla Battery App App is running" name="Tesla Battery App App is running" time="0.02">
+    </testcase>
+  </testsuite>
+  <testsuite name="Tesla Battery Component" errors="0" failures="10" skipped="0" timestamp="2022-10-29T22:08:47" time="0.427" tests="11">
+    <testcase classname="Tesla Battery Component Render the TeslaBattery component" name="Tesla Battery Component Render the TeslaBattery component" time="0.017">
+    </testcase>
+    <testcase classname="Tesla Battery Component Speed component Increment the speed" name="Tesla Battery Component Speed component Increment the speed" time="0.011">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;speed-increment-btn&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;tesla-battery&quot;
+    &gt;
+      &lt;div
+        class=&quot;tesla-controls cf&quot;
+      &gt;
+        &lt;div
+          class=&quot;tesla-counter&quot;
+        &gt;
+          &lt;p
+            class=&quot;tesla-counter__title&quot;
+          &gt;
+            Speed
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;tesla-counter__container cf&quot;
+          &gt;
+            &lt;div
+              class=&quot;tesla-counter__item&quot;
+              tabindex=&quot;0&quot;
+            &gt;
+              &lt;p
+                class=&quot;tesla-counter__number&quot;
+                data-testid=&quot;temperature-display&quot;
+              &gt;
+                55
+                &lt;span&gt;
+                  MPH
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;div
+                class=&quot;tesla-counter__controls&quot;
+                tabindex=&quot;-1&quot;
+              &gt;
+                &lt;button
+                  data-testid=&quot;temperature-increment-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+                &lt;button
+                  data-testid=&quot;temperature-decrement-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;tesla-climate cf&quot;
+        &gt;
+          &lt;div
+            class=&quot;tesla-counter&quot;
+          &gt;
+            &lt;p
+              class=&quot;tesla-counter__title&quot;
+            &gt;
+              Outiside Temperature
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;tesla-counter__container cf&quot;
+            &gt;
+              &lt;div
+                class=&quot;tesla-counter__item&quot;
+                tabindex=&quot;0&quot;
+              &gt;
+                &lt;p
+                  class=&quot;tesla-counter__number&quot;
+                  data-testid=&quot;temperature-display&quot;
+                &gt;
+                  20
+                  &lt;span&gt;
+                    °
+                  &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;div
+                  class=&quot;tesla-counter__controls&quot;
+                  tabindex=&quot;-1&quot;
+                &gt;
+                  &lt;button
+                    data-testid=&quot;temperature-increment-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                  &lt;button
+                    data-testid=&quot;temperature-decrement-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/config.js:40:19)
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/src/__tests__/TeslaBattery.spec.js:22:41)
+    at Promise.then.completed (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Tesla Battery Component Speed component The increment button should be disabled when the max limit has been reached" name="Tesla Battery Component Speed component The increment button should be disabled when the max limit has been reached" time="0.005">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;speed-increment-btn&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;tesla-battery&quot;
+    &gt;
+      &lt;div
+        class=&quot;tesla-controls cf&quot;
+      &gt;
+        &lt;div
+          class=&quot;tesla-counter&quot;
+        &gt;
+          &lt;p
+            class=&quot;tesla-counter__title&quot;
+          &gt;
+            Speed
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;tesla-counter__container cf&quot;
+          &gt;
+            &lt;div
+              class=&quot;tesla-counter__item&quot;
+              tabindex=&quot;0&quot;
+            &gt;
+              &lt;p
+                class=&quot;tesla-counter__number&quot;
+                data-testid=&quot;temperature-display&quot;
+              &gt;
+                55
+                &lt;span&gt;
+                  MPH
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;div
+                class=&quot;tesla-counter__controls&quot;
+                tabindex=&quot;-1&quot;
+              &gt;
+                &lt;button
+                  data-testid=&quot;temperature-increment-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+                &lt;button
+                  data-testid=&quot;temperature-decrement-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;tesla-climate cf&quot;
+        &gt;
+          &lt;div
+            class=&quot;tesla-counter&quot;
+          &gt;
+            &lt;p
+              class=&quot;tesla-counter__title&quot;
+            &gt;
+              Outiside Temperature
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;tesla-counter__container cf&quot;
+            &gt;
+              &lt;div
+                class=&quot;tesla-counter__item&quot;
+                tabindex=&quot;0&quot;
+              &gt;
+                &lt;p
+                  class=&quot;tesla-counter__number&quot;
+                  data-testid=&quot;temperature-display&quot;
+                &gt;
+                  20
+                  &lt;span&gt;
+                    °
+                  &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;div
+                  class=&quot;tesla-counter__controls&quot;
+                  tabindex=&quot;-1&quot;
+                &gt;
+                  &lt;button
+                    data-testid=&quot;temperature-increment-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                  &lt;button
+                    data-testid=&quot;temperature-decrement-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/config.js:40:19)
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/src/__tests__/TeslaBattery.spec.js:34:41)
+    at Promise.then.completed (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Tesla Battery Component Speed component Decrement the speed" name="Tesla Battery Component Speed component Decrement the speed" time="0.004">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;speed-decrement-btn&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;tesla-battery&quot;
+    &gt;
+      &lt;div
+        class=&quot;tesla-controls cf&quot;
+      &gt;
+        &lt;div
+          class=&quot;tesla-counter&quot;
+        &gt;
+          &lt;p
+            class=&quot;tesla-counter__title&quot;
+          &gt;
+            Speed
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;tesla-counter__container cf&quot;
+          &gt;
+            &lt;div
+              class=&quot;tesla-counter__item&quot;
+              tabindex=&quot;0&quot;
+            &gt;
+              &lt;p
+                class=&quot;tesla-counter__number&quot;
+                data-testid=&quot;temperature-display&quot;
+              &gt;
+                55
+                &lt;span&gt;
+                  MPH
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;div
+                class=&quot;tesla-counter__controls&quot;
+                tabindex=&quot;-1&quot;
+              &gt;
+                &lt;button
+                  data-testid=&quot;temperature-increment-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+                &lt;button
+                  data-testid=&quot;temperature-decrement-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;tesla-climate cf&quot;
+        &gt;
+          &lt;div
+            class=&quot;tesla-counter&quot;
+          &gt;
+            &lt;p
+              class=&quot;tesla-counter__title&quot;
+            &gt;
+              Outiside Temperature
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;tesla-counter__container cf&quot;
+            &gt;
+              &lt;div
+                class=&quot;tesla-counter__item&quot;
+                tabindex=&quot;0&quot;
+              &gt;
+                &lt;p
+                  class=&quot;tesla-counter__number&quot;
+                  data-testid=&quot;temperature-display&quot;
+                &gt;
+                  20
+                  &lt;span&gt;
+                    °
+                  &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;div
+                  class=&quot;tesla-counter__controls&quot;
+                  tabindex=&quot;-1&quot;
+                &gt;
+                  &lt;button
+                    data-testid=&quot;temperature-increment-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                  &lt;button
+                    data-testid=&quot;temperature-decrement-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/config.js:40:19)
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/src/__tests__/TeslaBattery.spec.js:49:41)
+    at Promise.then.completed (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Tesla Battery Component Speed component The increment button should be disabled when the max limit has been reached" name="Tesla Battery Component Speed component The increment button should be disabled when the max limit has been reached" time="0.003">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;speed-decrement-btn&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;tesla-battery&quot;
+    &gt;
+      &lt;div
+        class=&quot;tesla-controls cf&quot;
+      &gt;
+        &lt;div
+          class=&quot;tesla-counter&quot;
+        &gt;
+          &lt;p
+            class=&quot;tesla-counter__title&quot;
+          &gt;
+            Speed
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;tesla-counter__container cf&quot;
+          &gt;
+            &lt;div
+              class=&quot;tesla-counter__item&quot;
+              tabindex=&quot;0&quot;
+            &gt;
+              &lt;p
+                class=&quot;tesla-counter__number&quot;
+                data-testid=&quot;temperature-display&quot;
+              &gt;
+                55
+                &lt;span&gt;
+                  MPH
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;div
+                class=&quot;tesla-counter__controls&quot;
+                tabindex=&quot;-1&quot;
+              &gt;
+                &lt;button
+                  data-testid=&quot;temperature-increment-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+                &lt;button
+                  data-testid=&quot;temperature-decrement-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;tesla-climate cf&quot;
+        &gt;
+          &lt;div
+            class=&quot;tesla-counter&quot;
+          &gt;
+            &lt;p
+              class=&quot;tesla-counter__title&quot;
+            &gt;
+              Outiside Temperature
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;tesla-counter__container cf&quot;
+            &gt;
+              &lt;div
+                class=&quot;tesla-counter__item&quot;
+                tabindex=&quot;0&quot;
+              &gt;
+                &lt;p
+                  class=&quot;tesla-counter__number&quot;
+                  data-testid=&quot;temperature-display&quot;
+                &gt;
+                  20
+                  &lt;span&gt;
+                    °
+                  &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;div
+                  class=&quot;tesla-counter__controls&quot;
+                  tabindex=&quot;-1&quot;
+                &gt;
+                  &lt;button
+                    data-testid=&quot;temperature-increment-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                  &lt;button
+                    data-testid=&quot;temperature-decrement-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/config.js:40:19)
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/src/__tests__/TeslaBattery.spec.js:61:41)
+    at Promise.then.completed (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Tesla Battery Component Speed component Set the focus to true when the component is on focus" name="Tesla Battery Component Speed component Set the focus to true when the component is on focus" time="0.003">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;speed-container-control&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;tesla-battery&quot;
+    &gt;
+      &lt;div
+        class=&quot;tesla-controls cf&quot;
+      &gt;
+        &lt;div
+          class=&quot;tesla-counter&quot;
+        &gt;
+          &lt;p
+            class=&quot;tesla-counter__title&quot;
+          &gt;
+            Speed
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;tesla-counter__container cf&quot;
+          &gt;
+            &lt;div
+              class=&quot;tesla-counter__item&quot;
+              tabindex=&quot;0&quot;
+            &gt;
+              &lt;p
+                class=&quot;tesla-counter__number&quot;
+                data-testid=&quot;temperature-display&quot;
+              &gt;
+                55
+                &lt;span&gt;
+                  MPH
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;div
+                class=&quot;tesla-counter__controls&quot;
+                tabindex=&quot;-1&quot;
+              &gt;
+                &lt;button
+                  data-testid=&quot;temperature-increment-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+                &lt;button
+                  data-testid=&quot;temperature-decrement-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;tesla-climate cf&quot;
+        &gt;
+          &lt;div
+            class=&quot;tesla-counter&quot;
+          &gt;
+            &lt;p
+              class=&quot;tesla-counter__title&quot;
+            &gt;
+              Outiside Temperature
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;tesla-counter__container cf&quot;
+            &gt;
+              &lt;div
+                class=&quot;tesla-counter__item&quot;
+                tabindex=&quot;0&quot;
+              &gt;
+                &lt;p
+                  class=&quot;tesla-counter__number&quot;
+                  data-testid=&quot;temperature-display&quot;
+                &gt;
+                  20
+                  &lt;span&gt;
+                    °
+                  &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;div
+                  class=&quot;tesla-counter__controls&quot;
+                  tabindex=&quot;-1&quot;
+                &gt;
+                  &lt;button
+                    data-testid=&quot;temperature-increment-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                  &lt;button
+                    data-testid=&quot;temperature-decrement-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/config.js:40:19)
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/src/__tests__/TeslaBattery.spec.js:76:38)
+    at Promise.then.completed (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Tesla Battery Component Speed component Set the focus to false when the component has lost focus" name="Tesla Battery Component Speed component Set the focus to false when the component has lost focus" time="0.002">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;speed-container-control&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;tesla-battery&quot;
+    &gt;
+      &lt;div
+        class=&quot;tesla-controls cf&quot;
+      &gt;
+        &lt;div
+          class=&quot;tesla-counter&quot;
+        &gt;
+          &lt;p
+            class=&quot;tesla-counter__title&quot;
+          &gt;
+            Speed
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;tesla-counter__container cf&quot;
+          &gt;
+            &lt;div
+              class=&quot;tesla-counter__item&quot;
+              tabindex=&quot;0&quot;
+            &gt;
+              &lt;p
+                class=&quot;tesla-counter__number&quot;
+                data-testid=&quot;temperature-display&quot;
+              &gt;
+                55
+                &lt;span&gt;
+                  MPH
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;div
+                class=&quot;tesla-counter__controls&quot;
+                tabindex=&quot;-1&quot;
+              &gt;
+                &lt;button
+                  data-testid=&quot;temperature-increment-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+                &lt;button
+                  data-testid=&quot;temperature-decrement-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;tesla-climate cf&quot;
+        &gt;
+          &lt;div
+            class=&quot;tesla-counter&quot;
+          &gt;
+            &lt;p
+              class=&quot;tesla-counter__title&quot;
+            &gt;
+              Outiside Temperature
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;tesla-counter__container cf&quot;
+            &gt;
+              &lt;div
+                class=&quot;tesla-counter__item&quot;
+                tabindex=&quot;0&quot;
+              &gt;
+                &lt;p
+                  class=&quot;tesla-counter__number&quot;
+                  data-testid=&quot;temperature-display&quot;
+                &gt;
+                  20
+                  &lt;span&gt;
+                    °
+                  &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;div
+                  class=&quot;tesla-counter__controls&quot;
+                  tabindex=&quot;-1&quot;
+                &gt;
+                  &lt;button
+                    data-testid=&quot;temperature-increment-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                  &lt;button
+                    data-testid=&quot;temperature-decrement-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/config.js:40:19)
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/src/__tests__/TeslaBattery.spec.js:87:38)
+    at Promise.then.completed (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Tesla Battery Component Temperature component Increment the temperature" name="Tesla Battery Component Temperature component Increment the temperature" time="0.003">
+      <failure>TestingLibraryElementError: Found multiple elements by: [data-testid=&quot;temperature-increment-btn&quot;]
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;temperature-increment-btn&quot;
+  tabindex=&quot;-1&quot;
+  type=&quot;button&quot;
+/&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;temperature-increment-btn&quot;
+  tabindex=&quot;-1&quot;
+  type=&quot;button&quot;
+/&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;tesla-battery&quot;
+    &gt;
+      &lt;div
+        class=&quot;tesla-controls cf&quot;
+      &gt;
+        &lt;div
+          class=&quot;tesla-counter&quot;
+        &gt;
+          &lt;p
+            class=&quot;tesla-counter__title&quot;
+          &gt;
+            Speed
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;tesla-counter__container cf&quot;
+          &gt;
+            &lt;div
+              class=&quot;tesla-counter__item&quot;
+              tabindex=&quot;0&quot;
+            &gt;
+              &lt;p
+                class=&quot;tesla-counter__number&quot;
+                data-testid=&quot;temperature-display&quot;
+              &gt;
+                55
+                &lt;span&gt;
+                  MPH
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;div
+                class=&quot;tesla-counter__controls&quot;
+                tabindex=&quot;-1&quot;
+              &gt;
+                &lt;button
+                  data-testid=&quot;temperature-increment-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+                &lt;button
+                  data-testid=&quot;temperature-decrement-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;tesla-climate cf&quot;
+        &gt;
+          &lt;div
+            class=&quot;tesla-counter&quot;
+          &gt;
+            &lt;p
+              class=&quot;tesla-counter__title&quot;
+            &gt;
+              Outiside Temperature
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;tesla-counter__container cf&quot;
+            &gt;
+              &lt;div
+                class=&quot;tesla-counter__item&quot;
+                tabindex=&quot;0&quot;
+              &gt;
+                &lt;p
+                  class=&quot;tesla-counter__number&quot;
+                  data-testid=&quot;temperature-display&quot;
+                &gt;
+                  20
+                  &lt;span&gt;
+                    °
+                  &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;div
+                  class=&quot;tesla-counter__controls&quot;
+                  tabindex=&quot;-1&quot;
+                &gt;
+                  &lt;button
+                    data-testid=&quot;temperature-increment-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                  &lt;button
+                    data-testid=&quot;temperature-decrement-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/config.js:40:19)
+    at getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+    at getMultipleElementsFoundError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+    at getByTestId (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/src/__tests__/TeslaBattery.spec.js:109:41)
+    at Promise.then.completed (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Tesla Battery Component Temperature component Decrement the temperature" name="Tesla Battery Component Temperature component Decrement the temperature" time="0.003">
+      <failure>TestingLibraryElementError: Found multiple elements by: [data-testid=&quot;temperature-decrement-btn&quot;]
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;temperature-decrement-btn&quot;
+  tabindex=&quot;-1&quot;
+  type=&quot;button&quot;
+/&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;temperature-decrement-btn&quot;
+  tabindex=&quot;-1&quot;
+  type=&quot;button&quot;
+/&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;tesla-battery&quot;
+    &gt;
+      &lt;div
+        class=&quot;tesla-controls cf&quot;
+      &gt;
+        &lt;div
+          class=&quot;tesla-counter&quot;
+        &gt;
+          &lt;p
+            class=&quot;tesla-counter__title&quot;
+          &gt;
+            Speed
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;tesla-counter__container cf&quot;
+          &gt;
+            &lt;div
+              class=&quot;tesla-counter__item&quot;
+              tabindex=&quot;0&quot;
+            &gt;
+              &lt;p
+                class=&quot;tesla-counter__number&quot;
+                data-testid=&quot;temperature-display&quot;
+              &gt;
+                55
+                &lt;span&gt;
+                  MPH
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;div
+                class=&quot;tesla-counter__controls&quot;
+                tabindex=&quot;-1&quot;
+              &gt;
+                &lt;button
+                  data-testid=&quot;temperature-increment-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+                &lt;button
+                  data-testid=&quot;temperature-decrement-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;tesla-climate cf&quot;
+        &gt;
+          &lt;div
+            class=&quot;tesla-counter&quot;
+          &gt;
+            &lt;p
+              class=&quot;tesla-counter__title&quot;
+            &gt;
+              Outiside Temperature
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;tesla-counter__container cf&quot;
+            &gt;
+              &lt;div
+                class=&quot;tesla-counter__item&quot;
+                tabindex=&quot;0&quot;
+              &gt;
+                &lt;p
+                  class=&quot;tesla-counter__number&quot;
+                  data-testid=&quot;temperature-display&quot;
+                &gt;
+                  20
+                  &lt;span&gt;
+                    °
+                  &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;div
+                  class=&quot;tesla-counter__controls&quot;
+                  tabindex=&quot;-1&quot;
+                &gt;
+                  &lt;button
+                    data-testid=&quot;temperature-increment-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                  &lt;button
+                    data-testid=&quot;temperature-decrement-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/config.js:40:19)
+    at getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+    at getMultipleElementsFoundError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+    at getByTestId (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/src/__tests__/TeslaBattery.spec.js:120:41)
+    at Promise.then.completed (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Tesla Battery Component Temperature component The increment button should be disabled when the max temperature of 40 has been reached" name="Tesla Battery Component Temperature component The increment button should be disabled when the max temperature of 40 has been reached" time="0.002">
+      <failure>TestingLibraryElementError: Found multiple elements by: [data-testid=&quot;temperature-increment-btn&quot;]
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;temperature-increment-btn&quot;
+  tabindex=&quot;-1&quot;
+  type=&quot;button&quot;
+/&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;temperature-increment-btn&quot;
+  tabindex=&quot;-1&quot;
+  type=&quot;button&quot;
+/&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;tesla-battery&quot;
+    &gt;
+      &lt;div
+        class=&quot;tesla-controls cf&quot;
+      &gt;
+        &lt;div
+          class=&quot;tesla-counter&quot;
+        &gt;
+          &lt;p
+            class=&quot;tesla-counter__title&quot;
+          &gt;
+            Speed
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;tesla-counter__container cf&quot;
+          &gt;
+            &lt;div
+              class=&quot;tesla-counter__item&quot;
+              tabindex=&quot;0&quot;
+            &gt;
+              &lt;p
+                class=&quot;tesla-counter__number&quot;
+                data-testid=&quot;temperature-display&quot;
+              &gt;
+                55
+                &lt;span&gt;
+                  MPH
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;div
+                class=&quot;tesla-counter__controls&quot;
+                tabindex=&quot;-1&quot;
+              &gt;
+                &lt;button
+                  data-testid=&quot;temperature-increment-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+                &lt;button
+                  data-testid=&quot;temperature-decrement-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;tesla-climate cf&quot;
+        &gt;
+          &lt;div
+            class=&quot;tesla-counter&quot;
+          &gt;
+            &lt;p
+              class=&quot;tesla-counter__title&quot;
+            &gt;
+              Outiside Temperature
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;tesla-counter__container cf&quot;
+            &gt;
+              &lt;div
+                class=&quot;tesla-counter__item&quot;
+                tabindex=&quot;0&quot;
+              &gt;
+                &lt;p
+                  class=&quot;tesla-counter__number&quot;
+                  data-testid=&quot;temperature-display&quot;
+                &gt;
+                  20
+                  &lt;span&gt;
+                    °
+                  &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;div
+                  class=&quot;tesla-counter__controls&quot;
+                  tabindex=&quot;-1&quot;
+                &gt;
+                  &lt;button
+                    data-testid=&quot;temperature-increment-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                  &lt;button
+                    data-testid=&quot;temperature-decrement-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/config.js:40:19)
+    at getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+    at getMultipleElementsFoundError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+    at getByTestId (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/src/__tests__/TeslaBattery.spec.js:132:41)
+    at Promise.then.completed (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Tesla Battery Component Temperature component The decrement button should be disabled when the min temperature has been reached" name="Tesla Battery Component Temperature component The decrement button should be disabled when the min temperature has been reached" time="0.003">
+      <failure>TestingLibraryElementError: Found multiple elements by: [data-testid=&quot;temperature-decrement-btn&quot;]
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;temperature-decrement-btn&quot;
+  tabindex=&quot;-1&quot;
+  type=&quot;button&quot;
+/&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;temperature-decrement-btn&quot;
+  tabindex=&quot;-1&quot;
+  type=&quot;button&quot;
+/&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;tesla-battery&quot;
+    &gt;
+      &lt;div
+        class=&quot;tesla-controls cf&quot;
+      &gt;
+        &lt;div
+          class=&quot;tesla-counter&quot;
+        &gt;
+          &lt;p
+            class=&quot;tesla-counter__title&quot;
+          &gt;
+            Speed
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;tesla-counter__container cf&quot;
+          &gt;
+            &lt;div
+              class=&quot;tesla-counter__item&quot;
+              tabindex=&quot;0&quot;
+            &gt;
+              &lt;p
+                class=&quot;tesla-counter__number&quot;
+                data-testid=&quot;temperature-display&quot;
+              &gt;
+                55
+                &lt;span&gt;
+                  MPH
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;div
+                class=&quot;tesla-counter__controls&quot;
+                tabindex=&quot;-1&quot;
+              &gt;
+                &lt;button
+                  data-testid=&quot;temperature-increment-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+                &lt;button
+                  data-testid=&quot;temperature-decrement-btn&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;tesla-climate cf&quot;
+        &gt;
+          &lt;div
+            class=&quot;tesla-counter&quot;
+          &gt;
+            &lt;p
+              class=&quot;tesla-counter__title&quot;
+            &gt;
+              Outiside Temperature
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;tesla-counter__container cf&quot;
+            &gt;
+              &lt;div
+                class=&quot;tesla-counter__item&quot;
+                tabindex=&quot;0&quot;
+              &gt;
+                &lt;p
+                  class=&quot;tesla-counter__number&quot;
+                  data-testid=&quot;temperature-display&quot;
+                &gt;
+                  20
+                  &lt;span&gt;
+                    °
+                  &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;div
+                  class=&quot;tesla-counter__controls&quot;
+                  tabindex=&quot;-1&quot;
+                &gt;
+                  &lt;button
+                    data-testid=&quot;temperature-increment-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                  &lt;button
+                    data-testid=&quot;temperature-decrement-btn&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/config.js:40:19)
+    at getElementError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+    at getMultipleElementsFoundError (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+    at /Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+    at getByTestId (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/src/__tests__/TeslaBattery.spec.js:147:41)
+    at Promise.then.completed (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at _runTestsForDescribeBlock (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/Users/davyengone/Documents/hackages-learning-platform/content-creation/tesla-app-js/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
